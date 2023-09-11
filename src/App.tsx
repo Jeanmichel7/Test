@@ -5,13 +5,11 @@ import Search from "./components/search/Search";
 import Aside from "./components/display/Aside";
 
 function App() {
-  const [docs, setDocs] = useState<DocsInterface[]>([]);
+  const [docsList, setDocsList] = useState<DocsInterface[]>([]);
   return (
     <>
-      <Search setDocs={setDocs} />
-      {/* <div className='flex w-full'> */}
-      <Aside docs={docs} />
-      {/* </div> */}
+      <Search setDocs={setDocsList} />
+      <Aside docs={docsList} />
     </>
   );
 }
