@@ -1,9 +1,9 @@
 export interface DocsInterface {
   codecivilite: string;
   codecivilitedexercice: string;
-  codeprofession: string | number;
+  codeprofession: string;
   codesavoirfaire: string;
-  identifiantpp: string | number;
+  identifiantpp: string;
   libellecivilite: string;
   libellesavoirfaire: string;
   nomdexercice: string;

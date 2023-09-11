@@ -11,10 +11,10 @@ const Search = ({ setDocs }: SearchProps) => {
   const [docsFetched, setDocsFetched] = useState<DocsInterface[]>([]);
 
   return (
-    <>
-      <FormSearch setDocsFetched={setDocsFetched} />;
+    <div className='flex flex-col w-8/12'>
+      <FormSearch setDocsFetched={setDocsFetched} />
       <DisplayDocs docsFetched={docsFetched} setDocs={setDocs} />
-    </>
+    </div>
   );
 };
 
